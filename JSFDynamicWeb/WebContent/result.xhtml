@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head>
+        <title>JSF 2.2 Hello World </title>
+    </h:head>
+    <h:body bgcolor="white">
+        <h2>Hi #{helloWorldBean.name} Welcome to JSF Hello World</h2>
+                <h2>Now the Time is #{helloWorldBean.currentTime} Bye.</h2>
+ 
+ <h:form>
+        <h3>Now The time is <h:outputLabel> #{helloWorldBean.currentTime}</h:outputLabel></h3>
+        Your Name Please?
+        <h:inputText value="#{helloWorldBean.name}"></h:inputText>
+        <h:commandButton value="Say Hello" action="#{helloWorldBean.hello}"></h:commandButton>
+    </h:form>
+    </h:body>
+</html>
